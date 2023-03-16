@@ -10,6 +10,10 @@
     padding: 30px;
 }
 
+h2 {
+    font-size: 22px;
+}
+
 .fruit-form__header {
     text-align: center;
 }
