@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 import { API } from '../../api';
 import { IFruit } from '../../interfaces/Fruits.interfaces';
+import { ISelectedProps } from '../../interfaces/SelectedProps.interfaces';
 import FruitCard from '../FruitCard';
 import './styles.css';
 
-const FruitsList = () => {
+const FruitsList = ({ setIsSelected, setSelectedFruit }: ISelectedProps) => {
 
     const [fruitsList, setFruitsList] = useState([])
 
@@ -40,6 +41,8 @@ const FruitsList = () => {
             description={fruit.description}
             valueOne={fruit.valueOne}
             valueTwo={fruit.valueTwo}
+            setIsSelected={setIsSelected}
+            setSelectedFruit={setSelectedFruit}
             />)}
         </div>
     )

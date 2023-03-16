@@ -1,7 +1,20 @@
-import { IFruitProps } from "../../interfaces/Fruits.interfaces";
+import { IFruitPropsSelection } from "../../interfaces/Fruits.interfaces";
 import './styles.css';
 
-const FruitCard = ({ description, valueOne, valueTwo }: IFruitProps) => {
+const FruitCard = ({ description, valueOne, valueTwo, setIsSelected, setSelectedFruit }: IFruitPropsSelection) => {
+
+    const handleSelectItem = () => {
+
+        const selectedFruit = {
+            description,
+            valueOne,
+            valueTwo,
+        }
+
+        setIsSelected(true)
+        setSelectedFruit(selectedFruit)
+    }
+
     return(
         <div className='fruit-card'>
             <div className="fruit-card__textBox">
@@ -13,7 +26,7 @@ const FruitCard = ({ description, valueOne, valueTwo }: IFruitProps) => {
             <div className="fruit-card__textBox">
                 <span>{valueTwo}</span>
             </div>
-            <button type="button" className="fruit-card__selectBtn">Selecionar</button>
+            <button onClick={() => {handleSelectItem()}} type="button" className="fruit-card__selectBtn">Selecionar</button>
         </div>
     )
 }

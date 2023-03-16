@@ -1,0 +1,10 @@
+.fruit-form {
+    display: flex;
+    flex-direction: column;
+    
+    width: 20%;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 30px;
+}

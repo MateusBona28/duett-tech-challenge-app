@@ -11,6 +11,21 @@
   width: 100vw;
   height: 100vh;
   background-color: #4146FF;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+}
+
+.App-noSelectedFruitContainer {
+  display: flex;
+  text-align: center;
+  
+  width: 20%;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 30px;
+}
+
+h2 {
+  color: #141414;
 }
