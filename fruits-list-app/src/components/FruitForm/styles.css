@@ -1,10 +1,66 @@
 .fruit-form {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     
     width: 20%;
     height: 400px;
     background-color: #fff;
     border-radius: 6px;
     padding: 30px;
+}
+
+.fruit-form__header {
+    text-align: center;
+}
+
+.fruit-form__body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.fruit-form__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+input {
+    height: 20px;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 4px;
+    
+    font-size: 14px;
+    font-weight: 500;
+
+    border: solid 1.5px #828282;
+}
+
+input:disabled {
+    cursor: not-allowed;
+}
+
+.operationBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100px;
+    height: 42px;
+
+    background-color: #fff;
+    border: solid 1.5px #06ECB7;
+    color: #06ECB7;
+
+    border-radius: 4px;
+}
+
+.operationBtn:hover {
+    background-color: #06ECB7;
+    border: solid 1.5px #06ECB7;
+    color: #fff;
+    
+    cursor: pointer;
 }
