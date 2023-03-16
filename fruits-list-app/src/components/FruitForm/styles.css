@@ -50,17 +50,17 @@ input:disabled {
     width: 100px;
     height: 42px;
 
-    background-color: #fff;
-    border: solid 1.5px #06ECB7;
-    color: #06ECB7;
+    background-color: #4146FF;
+    border: solid 1.5px #4146FF;
+    color: #fff;
 
     border-radius: 4px;
 }
 
 .operationBtn:hover {
-    background-color: #06ECB7;
-    border: solid 1.5px #06ECB7;
-    color: #fff;
+    background-color: #fff;
+    border: solid 1.5px #4146FF;
+    color: #4146FF;
     
     cursor: pointer;
 }
