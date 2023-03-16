@@ -1,0 +1,35 @@
+.fruit-card {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: #828282;
+}
+
+.fruit-card__textBox {
+    width: 150px;
+}
+
+.fruit-card__selectBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 90px;
+    height: 36px;
+
+    background-color: #fff;
+    border: solid 1.5px #06ECB7;
+    color: #06ECB7;
+
+    border-radius: 4px;
+
+}
+
+.fruit-card__selectBtn:hover {
+    background-color: #06ECB7;
+    border: solid 1.5px #06ECB7;
+    color: #fff;
+    
+    cursor: pointer;
+}

@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { API } from '../../api';
+import { IFruit } from '../../interfaces/Fruits.interfaces';
 import FruitCard from '../FruitCard';
-import './styles.css'
+import './styles.css';
 
 const FruitsList = () => {
 
@@ -20,14 +21,26 @@ const FruitsList = () => {
     return(
         <div className='container-fruits'>
             <div className='container-fruits__cardsDescription'>
-                <span>Descrição</span>
-                <span>Valor A</span>
-                <span>Valor B</span>
-                <span>Ação</span>
+                <div className='container-fruits__textBox'>
+                    <span>Descrição</span>
+                </div>
+                <div className='container-fruits__textBox'>
+                    <span>Valor A</span>
+                </div>
+                <div className='container-fruits__textBox'>
+                    <span>Valor B</span>
+                </div>
+                <div className='container-fruits__textBox'>
+                    <span>Ação</span>
+                </div>
             </div>
             <div className='container-fruits__underline'></div>
-            <button onClick={() => { console.log(fruitsList) }}>teste</button>
-            {fruitsList?.map((fruit) => <FruitCard />)}
+            {fruitsList?.map((fruit: IFruit) => <FruitCard 
+            key={fruit.id} 
+            description={fruit.description}
+            valueOne={fruit.valueOne}
+            valueTwo={fruit.valueTwo}
+            />)}
         </div>
     )
 }
