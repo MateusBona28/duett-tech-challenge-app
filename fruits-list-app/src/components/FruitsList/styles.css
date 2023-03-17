@@ -1,7 +1,7 @@
 .container-fruits {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
     height: 500px;
     width: 50%;
     padding: 30px;
@@ -15,22 +15,23 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    border-bottom: solid 1.5px #cdd0d4;
+    padding-bottom: 5px;
 }
 
 .container-fruits__textBox {
-    width: 60px;
+    width: 70px;
 }
 
-.container-fruits__underline {
-    width: 100%;
+.underline-div {
     height: 1px;
-    border-radius: 6px;
-    background-color: #cdd0d4;
+    width: 90%;
+    background-color: #000;
 }
 
 @media (max-width: 600px) {
     .container-fruits {
-        width: 75%;
+        width: 80%;
         margin-top: 10px;
     }
 
