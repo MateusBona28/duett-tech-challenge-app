@@ -35,7 +35,6 @@ const FruitsList = ({ setIsSelected, setSelectedFruit }: ISelectedProps) => {
                     <span>Ação</span>
                 </div>
             </div>
-            <div className='underline-div'></div>
             {fruitsList?.map((fruit: IFruit) => <FruitCard 
             key={fruit.id} 
             description={fruit.description}

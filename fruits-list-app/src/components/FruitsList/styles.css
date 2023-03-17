@@ -23,12 +23,6 @@
     width: 70px;
 }
 
-.underline-div {
-    height: 1px;
-    width: 90%;
-    background-color: #000;
-}
-
 @media (max-width: 600px) {
     .container-fruits {
         width: 80%;
