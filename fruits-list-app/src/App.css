@@ -8,6 +8,7 @@
 
 .App {
   display: flex;
+  flex-direction: row;
   width: 100vw;
   height: 100vh;
   background-color: #06ECB7;
@@ -29,4 +30,12 @@
 h2 {
   color: #141414;
   font-size: 24px;
+}
+
+@media (max-width: 600px) {
+  .App {
+    flex-direction: column;
+    height: fit-content;
+    gap: 20px;
+  }
 }

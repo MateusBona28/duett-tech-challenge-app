@@ -68,3 +68,14 @@ input:disabled {
     
     cursor: pointer;
 }
+
+@media (max-width: 600px) {
+    .fruit-form {
+        width: 50%;
+        margin-bottom: 5px;
+    }
+
+    .operationBtn {
+        width: 70px;
+    }
+  }

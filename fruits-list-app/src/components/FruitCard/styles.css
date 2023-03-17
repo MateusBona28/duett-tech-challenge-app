@@ -33,3 +33,15 @@
     
     cursor: pointer;
 }
+
+@media (max-width: 600px) {
+    .fruit-card__selectBtn {
+        width: 75px;
+        height: 39px;
+        padding: 2px;
+    }
+
+    .fruit-card {
+        font-size: 14px;
+    }
+}

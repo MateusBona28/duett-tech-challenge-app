@@ -27,3 +27,18 @@
     border-radius: 6px;
     background-color: #cdd0d4;
 }
+
+@media (max-width: 600px) {
+    .container-fruits {
+        width: 75%;
+        margin-top: 10px;
+    }
+
+    .container-fruits__textBox {
+        width: 50px;
+    }
+
+    .container-fruits__cardsDescription {
+        font-size: 15px;
+    }
+  }
